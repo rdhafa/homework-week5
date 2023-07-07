@@ -1,0 +1,45 @@
+// Event button
+// buttonDaftar.addEventListener("click", () => {
+// // Check requirements
+// if (inputNama.value.length < 10) {
+//   alert("Jumlah karakter yang anda masukkan belum sesuai ketentuan!");
+// } else {
+//   console.log("ini else false");
+// }
+// Insert to table
+// const tBody = document.getElementsByTagName("tbody")[0];
+// const tr = document.createElement("tr");
+// const tdValueNama = document.createTextNode(inputNama.value);
+// const tdNama = document.createElement("td").appendChild(tdValueNama);
+// const tdValueUmur = document.createTextNode(inputUmur.value);
+// const tdValueUang = document.createTextNode(inputUang.value);
+// tr.appendChild(tdNama);
+// tBody.appendChild(tr);
+// const tdBaru = td.appendChild(tdValueNama);
+// tr.appendChild(tdBaru);
+// td.appendChild(tdValueNama);
+// tr.appendChild(td);
+// tBody.appendChild(tr);
+// makeTd.appendChild(tdValueNama, tdValueUmur, tdValueUang);
+// // makeTd.appendChild();
+// // makeTd.appendChild();
+// makeTr.appendChild(makeTd);
+// tBody.appendChild(makeTr);
+// const tdNama = makeTd.appendChild(tdValueNama);
+// const trBaru = makeTr.appendChild(tdNama);
+// tBody.appendChild(trBaru);
+// console.log(tdValueNama);
+// console.log(newTd.appendChild(newTdValue));
+// console.log(tdNama);
+// });
+// console.log(inputNama);
+
+// buttonDummy.addEventListener("click", () => {
+//   // Check requirements
+//   if (inputNama === false) {
+//     console.log("ini if true");
+//   } else {
+//     console.log("ini else false");
+//   }
+// });
+
