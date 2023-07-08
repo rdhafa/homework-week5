@@ -15,11 +15,12 @@
   <nav>
     <ul class="nav nav-tabs" id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
-        <button class="nav-link " id="registration-tab" data-bs-toggle="tab" data-bs-target="#registration-tab-pane"
-          type="button" role="tab" aria-controls="registration-tab-pane" aria-selected="true">Registrasi</button>
+        <button class="nav-link active" id="registration-tab" data-bs-toggle="tab"
+          data-bs-target="#registration-tab-pane" type="button" role="tab" aria-controls="registration-tab-pane"
+          aria-selected="true">Registrasi</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="registrant-tab" data-bs-toggle="tab" data-bs-target="#registrant-tab-pane"
+        <button class="nav-link" id="registrant-tab" data-bs-toggle="tab" data-bs-target="#registrant-tab-pane"
           type="button" role="tab" aria-controls="registrant-tab-pane" aria-selected="false">List Pendaftar</button>
       </li>
     </ul>
@@ -37,7 +38,7 @@
           <input type="text" class="form-control mb-3" name="nama" id="nama" placeholder="Masukkan minimal 10 karakter"
             autocomplete="off">
           <label for="umur" class="form-label mb-1">Umur:</label>
-          <input type="number" pattern="\d{1,}" class="form-control mb-3" name="umur" id="umur"
+          <input type="text" inputmode="numeric" pattern="\d{1,}" class="form-control mb-3" name="umur" id="umur"
             placeholder="Minimal umur 25 tahun" autocomplete="off">
           <label for="uang" class="form-label mb-1">Uang Sangu:</label>
           <input type="text" inputmode="numeric" pattern="\d{1,}" class="form-control" name="uang" id="uang"
@@ -48,7 +49,6 @@
           <div class="button">
             <button type="button" class="btn btn-primary" id="daftar">Daftar!</button>
             <button type="reset" class="btn btn-secondary">Hapus</button>
-            <!-- <p id="dummy">ini dummy</p> -->
           </div>
 
         </form>
@@ -59,14 +59,15 @@
 
 
     <!-- Tab List Pendaftar -->
-    <div class="list-pendaftar tab-pane fade show active" id="registrant-tab-pane" role="tabpanel"
-      aria-labelledby="registrant-tab" tabindex="0">
+    <div class="list-pendaftar tab-pane fade" id="registrant-tab-pane" role="tabpanel" aria-labelledby="registrant-tab"
+      tabindex="0">
       <h1>List Pendaftar</h1>
       <hr>
       <div class="table-container">
         <table class="table table-info table-striped table-bordered rounded-2 overflow-hidden text-center">
           <thead>
             <tr class="table-dark text-center">
+              <th scope="col">No</th>
               <th scope="col">Nama</th>
               <th scope="col">Umur</th>
               <th scope="col">Uang Sangu</th>
@@ -76,6 +77,9 @@
 
           </tbody>
         </table>
+      </div>
+      <div class="resume">
+        <p id="resume" class="text-center"></p>
       </div>
 
     </div>
